@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## AI Flashcards Project - Todo List
 
-## Getting Started
+### Category Selection
+- [x] Display educational categories like Basic Science, Civic Education, History, etc.
+- [x] Implement UI component (buttons/cards) for category selection.
 
-First, run the development server:
+### Flashcard Generation Options
+- [ ] Provide option for user to input a title and generate flashcards.
+- [ ] Implement AI auto-generation of flashcards based on selected category.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Flashcard Interaction
+- [ ] Show question with input field for the user to answer.
+- [ ] Correct Answer Flow:
+  - [ ] Display options to learn more or move to the next question.
+- [ ] Incorrect Answer Flow:
+  - [ ] Provide option to try again or reveal the correct answer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Progress Tracking
+- [ ] Track user performance (correct/incorrect answers).
+- [ ] Record data on user answers for future difficulty adjustments.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Additional Features
+- [ ] Implement difficulty adjustment based on user’s performance.
+- [ ] Add a hint system for tough questions.
+- [ ] Include a reward/gamification system (points, badges).
+- [ ] Add a section to review incorrectly answered questions.
+- [ ] Implement adaptive learning paths to focus on areas where the user struggles.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### AI & Reinforcement Learning
+- [ ] Track user ease in answering questions and adjust difficulty accordingly.
+- [ ] Integrate reinforcement learning to analyze user responses over time.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### RAG Integration
+- [ ] Implement RAG to retrieve more accurate and detailed information.
+- [ ] Use RAG for better explanations in the "learn more" feature.
