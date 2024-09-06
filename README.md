@@ -5,7 +5,7 @@
 - [x] Implement UI component (buttons/cards) for category selection.
 
 ### Flashcard Generation Options
-- [ ] Provide option for user to input a title and generate flashcards.
+- [x] Provide option for user to input a title and generate flashcards.
 - [ ] Implement AI auto-generation of flashcards based on selected category.
 
 ### Flashcard Interaction
