@@ -4,9 +4,9 @@
 - [x] Display educational categories like Basic Science, Civic Education, History, etc.
 - [x] Implement UI component (buttons/cards) for category selection.
 
-### Flashcard Generation Options
-- [x] Provide option for user to input a title and generate flashcards.
-- [ ] Implement AI auto-generation of flashcards based on selected category.
+### Content Generation Options
+- [x] Provide option for user to input a title and generate content.
+- [x] Implement AI auto-generation of content based on selected category.
 
 ### Flashcard Interaction
 - [ ] Show question with input field for the user to answer.
