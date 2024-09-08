@@ -21,12 +21,19 @@ const Content = () => {
 
     const [loading, setLoading] = useState(true);
     useEffect(() => {
+        const title = localStorage.getItem("title");
         const blog = async () => {
             try {
                 console.log("fetching blog data");
                 
                 // Fetch the blog data
-                const Data = await fetchData(slug);
+                let Data;
+                if(title){
+                    Data = await fetchData(slug, title);
+                }
+                else{
+                    Data = await fetchData(slug);
+                }
                 console.log(Data);
     
                 // Ensure blog data is valid before continuing

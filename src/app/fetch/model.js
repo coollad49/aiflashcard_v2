@@ -1,7 +1,7 @@
 import { createClient } from 'pexels';
 
 
-const fetchData = async(slug) => {
+const fetchData = async(subject, title="") => {
     console.log("fetchingggg...")
     try {
         // Make a POST request to your API route
@@ -10,7 +10,7 @@ const fetchData = async(slug) => {
             headers: {
                 'Content-Type': 'application/json', // Specify that you're sending JSON data
             },
-            body: JSON.stringify({ slug }) // Convert your data object to a JSON string
+            body: JSON.stringify({ subject, title }) // Convert your data object to a JSON string
         });
 
         // Check if the response is okay (status code 200-299)

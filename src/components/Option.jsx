@@ -12,7 +12,7 @@ const Option = ({slug}) => {
 
     return (
         <div className="flex items-center justify-center h-screen">
-            {!showInput ? <Options clickFunc={handleClick} slug={slug}/> : <Input />}
+            {!showInput ? <Options clickFunc={handleClick} slug={slug}/> : <Input slug={slug} />}
         </div>
     );
 }
@@ -23,20 +23,27 @@ const Options = ({clickFunc, slug})=>{
     return(
         <div className="flex gap-8 md:flex-row flex-col">
             <div onClick={clickFunc} className="border border-slate-300/20 px-6 py-16 cursor-pointer">
-                Create flashcards from your title ✍️
+                Provide a title you want facts about 📚
             </div>
             <div onClick={()=>router.push(`/dashboard/${slug}/content`)} className="border border-slate-300/20 px-6 py-16 cursor-pointer">
-                Let AI generate flashcards for you 🤖
+                Get random facts 🎲
             </div>
         </div>
     )
 }
 
-const Input = ()=>{
+const Input = ({slug})=>{
+    const [title, setTitle] = useState("");
+    const router = useRouter();
+
+    const handleSubmit = ()=>{
+        localStorage.setItem("title", title);
+        router.push(`/dashboard/${slug}/content`)
+    }
     return(
         <div className="w-[40%] flex gap-3">
-            <input type="text" placeholder="Input a subject title" className="w-full outline-none border-b border-slate-200/30 bg-background p-4"/>
-            <Button className="mt-4">Create 😸</Button>
+            <input type="text" placeholder="Input a subject title" onChange={(e)=>setTitle(e.target.value)} value={title} className="w-full outline-none border-b border-slate-200/30 bg-background p-4"/>
+            <Button onClick={handleSubmit} className="mt-4">Create 😸</Button>
         </div>
     )
 }
