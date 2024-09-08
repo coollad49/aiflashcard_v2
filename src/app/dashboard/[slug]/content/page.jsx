@@ -110,10 +110,11 @@ const Content = () => {
         )
     }
     return (
-        <TracingBeam className="px-6">
+        <TracingBeam className="px-6 relative">
             <div className="max-w-2xl mx-auto antialiased py-8 relative  flex flex-col gap-5">
                 <h1 className="text-3xl font-bold ">{blogData.title}</h1>
-                <img src={imgUrl} width={800} height={500} className="rounded-lg"/>
+                <a className="text-sm" href="https://www.pexels.com">Photos provided by Pexels</a>
+                <Image alt={''} src={imgUrl} width={800} height={500} className="rounded-lg"/>
                 <div className="flex flex-col gap-4">
                     <p className="text-lg font-semibold text-sky-200 p-4 rounded">{blogData.content.introduction}</p>
                     <p className="text-lg text-yellow-100 p-4 rounded">{blogData.content.explanation}</p>
