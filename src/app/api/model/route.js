@@ -1,7 +1,7 @@
 import {NextResponse} from "next/server"
 import OpenAI from "openai"
 
-const OPENROUTER_API_KEY = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
+const OPENROUTER_API_KEY = process.env.OPENAI_API_KEY;
 const TITLE = process.env.TITLE;
 const SITE_URL = process.env.SITE_URL;
 
